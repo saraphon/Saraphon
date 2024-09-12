@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Add New Food</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Add  Fried chicken</h2>
+        <form action="AddNewFoodServlet2" method="post">
+            <label for="foodname">Namefood:</label><br>
+            <input type="text" id="foodname" name="foodname"><br>
+
+            <label for="Type">Type:</label><br>
+            <select id="Type" name="Type">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select><br>
+
+            <label>Crispness:</label><br>
+            <input type="checkbox" id="crispness1" name="crispness" value="not crispy">
+            <label for="crispness1">Not crispy</label><br>
+            <input type="checkbox" id="crispness2" name="crispness" value="little crispy">
+            <label for="crispness2">Little crispy</label><br>
+            <input type="checkbox" id="crispness3" name="crispness" value="very crispy">
+            <label for="crispness3">Very crispy</label><br>
+            <input type="checkbox" id="crispness3" name="crispness" value="Extra crispy">
+            <label for="crispness3">Extra crispy</label><br>
+
+            <label>Spicy:</label><br>
+            <input type="radio" id="hotlevel1" name="hotlevel" value="Mild">
+            <label for="hotlevel1">Mild</label><br>
+            <input type="radio" id="hotlevel2" name="hotlevel" value="Medium ">
+            <label for="hotlevel2">Medium </label><br>
+            <input type="radio" id="hotlevel3" name="hotlevel" value="Hot">
+            <label for="hotlevel3">Hot</label><br>
+             <input type="radio" id="hotlevel1" name="hotlevel" value="Very Hot">
+            <label for="hotlevel1">Very Hot</label><br>
+            <input type="radio" id="hotlevel2" name="hotlevel" value="Extra Hot">
+            <label for="hotlevel2">Extra Hot</label><br>
+
+            <label for="Sauce">Sauce:</label><br>
+            <select id="Sauce" name="Sauce">
+                <option value="Tomato ketchup">Tomato ketchup</option>
+                <option value="chili sauce">Chili sauce</option>
+                <option value="cheese sauce">Cheese sauce</option>
+                <option value="chicken sauce">Chicken sauce</option>
+                <option value="Hot Sauce">Hot Sauc</option>
+                <option value="Teriyaki Sauce">Teriyaki Sauce</option>
+                <option value="Black Pepper Sauce">Black Pepper Sauce</option>
+
+            </select><br>
+
+            <label for="foodPrice">Price:</label><br>
+            <input type="text" id="foodPrice" name="foodPrice" required><br>
+
+            <input type="submit" value="Add Fried chicken">
+             <button onclick="window.location.href='index.html';">HOME</button>
+        </form>
+    </body>
+</html>
